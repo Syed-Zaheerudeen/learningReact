@@ -1,9 +1,6 @@
-import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+    return (
     <h1>hello world of vite with react</h1>
   )
 }
