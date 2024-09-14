@@ -1,12 +1,13 @@
 import { useState } from "react";
 
 
-function App() {
-    let [count,setCount] = useState(0);
+function App({def}) {
+    let [count,setCount] = useState(def);
 
     function increment() {
       if(count < 20) {
-        setCount(count + 1);
+        count++;
+        setCount(count);
       } else {
         alert("you cannot go above 20");
       }
